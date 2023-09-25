@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b4jy14ropwlp2"]
+
+[node name="RemoveButton" type="Button"]
+modulate = Color(1, 0.415686, 0.34902, 1)
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
+text = "X"

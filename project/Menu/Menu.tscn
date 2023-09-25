@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfkj6p4mouhx8"]
+
+[sub_resource type="GDScript" id="GDScript_i4ipb"]
+script/source = "extends CanvasLayer
+# Scrollable table of all the information based on search bar (if its blank it displays all),
+# Button to add custom item, Back-to-main button
+
+# Menu last updated 9/25/2023
+
+var state_machine = null
+
+@onready var item_table = $ScrollContainer/ItemTable
+var rows:Array[ItemRow] = []
+
+func enter(_msg := {}) -> void:
+	for i in Global.items:
+		make_item_row(i)
+
+func exit() -> void:
+	rows.clear()
+
+func make_item_row(item:Item)->void:
+	var row = ItemRow.new(item)
+	row.changed.connect(items_changed)
+	rows.append(row)
+	for i in row.get_row_elements():
+		item_table.add_child(i)
+
+func _on_back_pressed():
+	state_machine.transition_to(\"Main\")
+
+func _on_custom_pressed():
+	state_machine.transition_to(\"CustomItem\")
+
+func items_changed():
+	Global.save_items()
+"
+
+[node name="Menu" type="CanvasLayer"]
+visible = false
+script = SubResource("GDScript_i4ipb")
+
+[node name="Background" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemTable" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="headerName" type="Label" parent="ScrollContainer/ItemTable"]
+layout_mode = 2
+text = "Name"
+
+[node name="headerScore" type="Label" parent="ScrollContainer/ItemTable"]
+layout_mode = 2
+text = "Score"
+
+[node name="headerPrice" type="Label" parent="ScrollContainer/ItemTable"]
+layout_mode = 2
+text = "Price"
+
+[node name="headerCalories" type="Label" parent="ScrollContainer/ItemTable"]
+layout_mode = 2
+text = "Calories"
+
+[node name="headerButton" type="Label" parent="ScrollContainer/ItemTable"]
+layout_mode = 2
+
+[node name="Buttons" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 48)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons"]
+layout_mode = 2
+offset_top = 8.0
+offset_right = 281.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Back" type="Button" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Main"
+
+[node name="Custom" type="Button" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+text = "Add item"
+
+[connection signal="pressed" from="Buttons/HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Buttons/HBoxContainer/Custom" to="." method="_on_custom_pressed"]

@@ -1,0 +1,51 @@
+{"calories":180,"drink":false,"name":"Soft Taco","price":1.79,"score":0}
+{"calories":210,"drink":false,"name":"Soft Taco Supreme","price":2.96,"score":0}
+{"calories":240,"drink":false,"name":"Spicy Potato Soft Taco","price":1,"score":0}
+{"calories":170,"drink":false,"name":"Crunchy Taco","price":1.79,"score":0}
+{"calories":190,"drink":false,"name":"Crunchy Taco Supreme","price":2.69,"score":0}
+{"calories":170,"drink":false,"name":"Nacho Cheese Doritos Locos Taco","price":2.49,"score":0}
+{"calories":190,"drink":false,"name":"Nacho Cheese Doritos Locos Taco Supreme","price":3.19,"score":0}
+{"calories":360,"drink":false,"name":"Chalupa Supreme","price":4.39,"score":0}
+{"calories":340,"drink":false,"name":"Black Bean Chalupa Supreme","price":4.39,"score":0}
+{"calories":500,"drink":false,"name":"Cheesy Gordita Crunch","price":4.79,"score":0}
+{"calories":500,"drink":false,"name":"Doritos Cheesy Gordita Crunch - Nacho Cheese","price":5.19,"score":0}
+{"calories":510,"drink":false,"name":"Chipotle Ranch Grilled Chicken Burrito","price":2,"score":0}
+{"calories":460,"drink":false,"name":"Beefy Crunch Burrito","price":2.49,"score":0}
+{"calories":720,"drink":false,"name":"Grilled Cheese Burrito","price":4.79,"score":0}
+{"calories":350,"drink":false,"name":"Bean Burrito","price":1.79,"score":0}
+{"calories":490,"drink":false,"name":"Beefy 5-Layer Burrito","price":3.59,"score":0}
+{"calories":390,"drink":false,"name":"Burrito Supreme","price":4.69,"score":0}
+{"calories":380,"drink":false,"name":"Chili Cheese Burrito","price":2.99,"score":0}
+{"calories":620,"drink":false,"name":"Beefy Melt Burrito","price":2,"score":0}
+{"calories":570,"drink":false,"name":"Fiesta Veggie Burrito","price":2,"score":0}
+{"calories":420,"drink":false,"name":"Cheesy Bean and Rice Burrito","price":1,"score":0}
+{"calories":530,"drink":false,"name":"Mexican Pizza","price":5.19,"score":0}
+{"calories":470,"drink":false,"name":"Veggie Mexican Pizza","price":5.19,"score":0}
+{"calories":540,"drink":false,"name":"Crunchwrap Supreme","price":4.99,"score":0}
+{"calories":520,"drink":false,"name":"Black Bean Crunchwrap Supreme","price":4.99,"score":0}
+{"calories":180,"drink":false,"name":"Cheesy Roll Up","price":1,"score":0}
+{"calories":190,"drink":false,"name":"Chicken Chipotle Melt","price":1.89,"score":0}
+{"calories":520,"drink":false,"name":"Chicken Quesadilla","price":4.99,"score":0}
+{"calories":520,"drink":false,"name":"Steak Quesadilla","price":5.29,"score":0}
+{"calories":470,"drink":false,"name":"Cheese Quesadilla","price":4.49,"score":0}
+{"calories":730,"drink":false,"name":"Nachos BellGrande","price":5.39,"score":0}
+{"calories":220,"drink":false,"name":"Chips and Nacho Cheese Sauce","price":2.19,"score":0}
+{"calories":460,"drink":false,"name":"Power Menu Bowl","price":6.69,"score":0}
+{"calories":420,"drink":false,"name":"Power Menu Bowl - Veggie","price":6.69,"score":0}
+{"calories":240,"drink":false,"name":"Cheesy Fiesta Potatoes","price":2.49,"score":0}
+{"calories":350,"drink":false,"name":"Cheesy Toasted Breakfast Burrito Bacon","price":1.69,"score":0}
+{"calories":350,"drink":false,"name":"Cheesy Toasted Breakfast Burrito Sausage","price":1.69,"score":0}
+{"calories":340,"drink":false,"name":"Cheesy Toasted Breakfast Burrito Potato","price":1.69,"score":0}
+{"calories":570,"drink":false,"name":"Grande Toasted Breakfast Burrito Steak","price":4.49,"score":0}
+{"calories":570,"drink":false,"name":"Grande Toasted Breakfast Burrito Sausage","price":3.89,"score":0}
+{"calories":570,"drink":false,"name":"Grande Toasted Breakfast Burrito Sausage","price":3.89,"score":0}
+{"calories":510,"drink":false,"name":"Breakfast Quesadilla Sausage","price":3.59,"score":0}
+{"calories":510,"drink":false,"name":"Breakfast Quesadilla Bacon","price":3.59,"score":0}
+{"calories":510,"drink":false,"name":"Breakfast Quesadilla Steak","price":4.19,"score":0}
+{"calories":630,"drink":false,"name":"Breakfast California Crunchwrap","price":3.99,"score":0}
+{"calories":670,"drink":false,"name":"Breakfast Crunchwrap Bacon","price":3.79,"score":0}
+{"calories":760,"drink":false,"name":"Breakfast Crunchwrap Sausage","price":3.79,"score":0}
+{"calories":160,"drink":false,"name":"Hash Brown","price":1.49,"score":0}
+{"calories":170,"drink":false,"name":"Cinnabon Delights 2 Pack","price":2.29,"score":0}
+{"calories":1010,"drink":false,"name":"Cinnabon Delights 12 Pack","price":6.69,"score":0}
+{"calories":170,"drink":false,"name":"Cinnamon Twists","price":1,"score":0}

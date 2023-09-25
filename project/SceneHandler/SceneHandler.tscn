@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3fmx48ew6m2i"]
+
+[ext_resource type="Script" path="res://SceneHandler/SceneHandler.gd" id="1_0rdpa"]
+[ext_resource type="PackedScene" uid="uid://b4ccf03owppsu" path="res://Initializer/Init.tscn" id="2_w85im"]
+[ext_resource type="PackedScene" uid="uid://bkipq60bf6iqg" path="res://Main/Main.tscn" id="3_jxvdv"]
+[ext_resource type="PackedScene" uid="uid://dfkj6p4mouhx8" path="res://Menu/Menu.tscn" id="4_wtqd7"]
+[ext_resource type="PackedScene" uid="uid://dxj4nmdaywtte" path="res://CustomItem/CustomItem.tscn" id="5_hyqmm"]
+
+[node name="SceneHandler" type="Node"]
+script = ExtResource("1_0rdpa")
+
+[node name="Init" parent="." instance=ExtResource("2_w85im")]
+
+[node name="Main" parent="." instance=ExtResource("3_jxvdv")]
+
+[node name="Menu" parent="." instance=ExtResource("4_wtqd7")]
+
+[node name="CustomItem" parent="." instance=ExtResource("5_hyqmm")]
+
+[node name="Debug" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Label" type="Label" parent="Debug"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0

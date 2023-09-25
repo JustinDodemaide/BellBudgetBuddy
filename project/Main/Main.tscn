@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkipq60bf6iqg"]
+
+[ext_resource type="Script" path="res://Main/Main.gd" id="1_xtiyu"]
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource("1_xtiyu")
+
+[node name="Background" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Budget" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+placeholder_text = "Budget"
+
+[node name="Variety" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "More variety"
+
+[node name="Generate" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+disabled = true
+text = "Generate Order"
+
+[node name="Panel" type="PanelContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+
+[node name="Order" type="Label" parent="VBoxContainer/Panel"]
+layout_mode = 2
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Buttons" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 48)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons"]
+layout_mode = 2
+offset_top = 8.0
+offset_right = 281.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Menu" type="Button" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+text = "Menu"
+
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/Budget" to="." method="_on_budget_text_changed"]
+[connection signal="pressed" from="VBoxContainer/Generate" to="." method="_on_generate_pressed"]
+[connection signal="pressed" from="Buttons/HBoxContainer/Menu" to="." method="_on_menu_pressed"]
